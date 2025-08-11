@@ -1,8 +1,31 @@
 :root {
-	/* ---- Spacing base ---- */
-	/* If you're compiling with LESS, @space-unit must be defined earlier.
-	   If not using LESS, switch this to a hard value like 1rem. */
-	--space-unit: @space-unit;
+	/* Surface color */
+	--color-surface-0-oklch__l: 0.2439;
+	--color-surface-0-oklch__c: 0.0072;
+	--color-surface-0-oklch__h: 325.79;
+		
+	--color-surface-1-oklch__l: calc( var( --color-surface-0-oklch__l ) + var( --delta-lightness-surface-base ) );
+	--color-surface-1-oklch__c: 0.0092;
+	
+	--color-surface-2-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 2 ) );
+	--color-surface-2-oklch__c: 0.0112;
+	
+	--color-surface-3-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 3 ) );
+	--color-surface-3-oklch__c: 0.0122;
+	
+	--color-surface-4-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 4 ) );
+	--color-surface-4-oklch__c: 0.0142;
+
+	--color-surface-0: ~'oklch( var( --color-surface-0-oklch__l ) var( --color-surface-0-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-1: ~'oklch( var( --color-surface-1-oklch__l ) var( --color-surface-1-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-1--hover: ~'oklch( calc( var( --color-surface-1-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-surface-1-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-1--active: ~'oklch( calc( var( --color-surface-1-oklch__l ) + var( --delta-lightness-active-state ) ) var( --color-surface-1-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-2: ~'oklch( var( --color-surface-2-oklch__l ) var( --color-surface-2-oklch__c ) var( --color-progressive-oklch__h ) )';
+	--color-surface-2--hover: ~'oklch( calc( var( --color-surface-2-oklch__l ) + var( --delta-lightness-hover-state ) ) var( --color-surface-2-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-2--active: ~'oklch( calc( var( --color-surface-2-oklch__l ) + var( --delta-lightness-active-state ) ) var( --color-surface-2-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-3: ~'oklch( var( --color-surface-3-oklch__l ) var( --color-surface-3-oklch__c ) var( --color-surface-0-oklch__h ) )';
+	--color-surface-4: ~'oklch( var( --color-surface-4-oklch__l ) var( --color-surface-4-oklch__c ) var( --color-surface-0-oklch__h ) )';
+
 
 	/* ---- Spacing scale (relative to --space-md) ---- */
 	--space-xxxs: calc(var(--space-unit) * 0.125);
