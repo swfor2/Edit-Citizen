@@ -1,20 +1,24 @@
 :root {
+
 	/* Surface color */
-	--color-surface-0-oklch__l: 0.2439;
-	--color-surface-0-oklch__c: 0.0072;
-	--color-surface-0-oklch__h: 325.79;
+	--color-surface-0-oklch__l: 0.211;
+	--color-surface-0-oklch__c: 0.0042;
+	--color-surface-0-oklch__h: 308.24;
 		
 	--color-surface-1-oklch__l: calc( var( --color-surface-0-oklch__l ) + var( --delta-lightness-surface-base ) );
-	--color-surface-1-oklch__c: 0.0092;
+	--color-surface-1-oklch__c: calc( var( --color-surface-0-oklch__c ) + .01 );
 	
 	--color-surface-2-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 2 ) );
-	--color-surface-2-oklch__c: 0.0112;
+	--color-surface-2-oklch__c: calc( var( --color-surface-0-oklch__c ) + .02 );
 	
 	--color-surface-3-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 3 ) );
-	--color-surface-3-oklch__c: 0.0122;
+	--color-surface-3-oklch__c: calc( var( --color-surface-0-oklch__c ) + .03 );
 	
 	--color-surface-4-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 4 ) );
-	--color-surface-4-oklch__c: 0.0142;
+	--color-surface-4-oklch__c: calc( var( --color-surface-0-oklch__c ) + .04 );
+	
+	--color-surface-5-oklch__l: calc( var( --color-surface-0-oklch__l ) + ( var( --delta-lightness-surface-base ) * 4 ) );
+	--color-surface-5-oklch__c: calc( var( --color-surface-0-oklch__c ) + .05 );
 
 	--color-surface-0: ~'oklch( var( --color-surface-0-oklch__l ) var( --color-surface-0-oklch__c ) var( --color-surface-0-oklch__h ) )';
 	--color-surface-1: ~'oklch( var( --color-surface-1-oklch__l ) var( --color-surface-1-oklch__c ) var( --color-surface-0-oklch__h ) )';
