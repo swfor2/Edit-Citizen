@@ -1,0 +1,31 @@
+:root {
+	.theme-base();
+
+	/* Spacing -- Expansions and edits */
+	--space-unit: @space-unit;
+	--space-xxxs: calc( 0.125 * var( --space-md );
+	--space-xxs:  calc( 0.25 * var( --space-md ) );
+	--space-xs:   calc( 0.5 * var( --space-md ) );
+	--space-sm:   calc( 0.75 * var( --space-md ) );
+	--space-md:   calc( 1.00 * var( --space-unit ) );
+	--space-lg:   calc( 1.25 * var( --space-md ) );
+	--space-xl:   calc( 1.5 * var( --space-md ) );
+	--space-xxl:  calc( 1.75 * var( --space-md ) );
+	--space-xxxl: calc( 2.00 * var( --space-md ) );
+
+	/* Aliases for space tokens */
+	--space-xxx-small: var(--space-xxx-small);
+	--space-xx-small: var(--space-xx-small);
+	--space-x-small: var(--space-x-small);
+	--space-small: var(--space-sm);
+	--space-medium: var(--space-md);
+	--space-large: var(--space-lg);
+	--space-x-large: var(--space-xl);
+	--space-xx-large: var(--space-xxl);
+	--space-xxx-large: var(--space-xxxl);
+
+	/* transition, transformation, etc */
+		--transform-image-hover:  none;
+		--transition-timing-function-ease-in-out: cubic-bezier(0.4825, 0.305, 0.6775, 1);
+
+	
