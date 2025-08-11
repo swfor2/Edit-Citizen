@@ -5,15 +5,15 @@
 	--space-unit: @space-unit;
 
 	/* ---- Spacing scale (relative to --space-md) ---- */
+	--space-xxxs: calc(var(--space-unit) * 0.125);
+	--space-xxs:  calc(var(--space-unit) * 0.250);
+	--space-xs:   calc(var(--space-unit) * 0.500);
+	--space-sm:   calc(var(--space-unit) * 0.750);
 	--space-md:   calc(var(--space-unit) * 1);
-	--space-xxxs: calc(var(--space-md) * 0.125);
-	--space-xxs:  calc(var(--space-md) * 0.25);
-	--space-xs:   calc(var(--space-md) * 0.5);
-	--space-sm:   calc(var(--space-md) * 0.75);
-	--space-lg:   calc(var(--space-md) * 1.25);
-	--space-xl:   calc(var(--space-md) * 1.5);
-	--space-xxl:  calc(var(--space-md) * 1.75);
-	--space-xxxl: calc(var(--space-md) * 2);
+	--space-lg:   calc(var(--space-unit) * 1.250);
+	--space-xl:   calc(var(--space-unit) * 1.500);
+	--space-xxl:  calc(var(--space-unit) * 1.750);
+	--space-xxxl: calc(var(--space-unit) * 2);
 
 	/* ---- Aliases (friendly names) ---- */
 	--space-xxx-small: var(--space-xxxs);
