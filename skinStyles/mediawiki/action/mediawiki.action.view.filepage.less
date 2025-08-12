@@ -62,9 +62,6 @@
 		color: var( --color-subtle );
 		background-color: var( --color-surface-0 );
 		border: var( --border-width-base ) solid var( --border-color-base );
-		max-width: 100%;
-		height: auto;
-		object-fit: contain;
 
 		&:hover {
 			color: var( --color-inverted-primary );
@@ -93,15 +90,11 @@
 
 	img {
 		// Large image can overflow
-		max-width: 100%;
+				max-width: 100%;
 		height: auto;
-		background-color: var( --color-surface-2 );
+		object-fit: contain; );
 	}
 
-	// Add affordance for full res image
-	> a:hover > img {
-		transform: var( --transform-image-hover );
-	}
 }
 
 #file {
