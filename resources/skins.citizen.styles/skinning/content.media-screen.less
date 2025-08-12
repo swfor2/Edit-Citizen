@@ -20,20 +20,11 @@ figure[ typeof~='mw:File/Frame' ] {
 			max-width: 100%;
 			height: auto;
 			contain: strict;
-			transition: var( --transition-hover );
-			transition-property: transform;
+			object-fit: contain;
 
 			// Prevent constraining image width in tables
 			table & {
 				max-width: none;
-			}
-		}
-
-		// Add affordance to replace magnify icon
-		&:hover:not( .lazy ):not( .new ) {
-			img,
-			source {
-				transform: var( --transform-image-hover );
 			}
 		}
 	}
