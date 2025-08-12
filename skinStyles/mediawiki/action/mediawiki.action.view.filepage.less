@@ -62,7 +62,9 @@
 		color: var( --color-subtle );
 		background-color: var( --color-surface-0 );
 		border: var( --border-width-base ) solid var( --border-color-base );
-		border-radius: var( --border-radius-pill );
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
 
 		&:hover {
 			color: var( --color-inverted-primary );
@@ -94,8 +96,6 @@
 		max-width: 100%;
 		height: auto;
 		background-color: var( --color-surface-2 );
-		transition: var( --transition-hover );
-		transition-property: transform;
 	}
 
 	// Add affordance for full res image
