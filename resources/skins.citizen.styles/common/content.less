@@ -7,6 +7,18 @@
 		display: inline-block;
 		overflow: hidden;
 		vertical-align: top; // get rid of that weird bottom gap from inline block
+
+		> img {
+			transition: var( --transition-hover );
+			transition-property: transform;
+		}
+
+		// Add affordance to replace magnify icon
+		&:hover:not( .lazy ):not( .new ) {
+			> img {
+				transform: var( --transform-image-hover );
+			}
+		}
 	}
 }
 
@@ -58,10 +70,15 @@
 	align-items: center;
 	margin-top: var( --space-md );
 
-	&1 {margin-top: var(--space-h1, 3rem)}
-	&2 {margin-top: var(--space-h2, 3rem);}
-	&3 {margin-top: var(--space-h3, 2rem);
-	&4 {var(--space-h4, 2rem)}
+	&1,
+	&2 {
+		margin-top: 3rem;
+	}
+
+	&3,
+	&4 {
+		margin-top: 2rem;
+	}
 
 	h1,
 	h2,
