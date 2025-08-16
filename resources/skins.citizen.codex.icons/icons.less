@@ -1,0 +1,76 @@
+@import (reference) '@wikimedia/codex-design-tokens/theme-wikimedia-ui.less';
+@import (reference) '@wikimedia/codex/mixins/css-icon.less';
+
+/**
+ * Unified class your PHP will emit.
+ * Example: <span class="citizen-icon citizen-icon--trash" aria-hidden="true"></span>
+ */
+
+.citizen-icon {
+	// Common sizing aligns with your existing 20px-ish inline icons.
+	display: inline-block;
+	vertical-align: text-bottom;
+
+	/* Map your old keys to Codex icons */
+	&--arrowPrevious    { .cdx-mixin-css-icon( @cdx-icon-arrow-previous ); }
+	&--article          { .cdx-mixin-css-icon( @cdx-icon-article ); }
+	&--articleNotFound  { .cdx-mixin-css-icon( @cdx-icon-article-not-found ); }
+	&--articleRedirect  { .cdx-mixin-css-icon( @cdx-icon-article-redirect ); }
+	&--articleSearch    { .cdx-mixin-css-icon( @cdx-icon-article-search ); }
+	&--articlesSearch   { .cdx-mixin-css-icon( @cdx-icon-articles-search ); }
+	&--bell             { .cdx-mixin-css-icon( @cdx-icon-bell ); }
+	&--block            { .cdx-mixin-css-icon( @cdx-icon-block ); }
+  &--close            { .cdx-mixin-css-icon( @cdx-icon-close ); }
+	&--collapse         { .cdx-mixin-css-icon( @cdx-icon-collapse ); }
+	&--database         { .cdx-mixin-css-icon( @cdx-icon-database ); }
+	&--die              { .cdx-mixin-css-icon( @cdx-icon-die ); }
+	&--edit             { .cdx-mixin-css-icon( @cdx-icon-edit ); }
+	&--editLock         { .cdx-mixin-css-icon( @cdx-icon-edit-lock ); }
+	&--ellipsis         { .cdx-mixin-css-icon( @cdx-icon-ellipsis ); }
+	&--first            { .cdx-mixin-css-icon( @cdx-icon-first ); }
+	&--help             { .cdx-mixin-css-icon( @cdx-icon-help ); }
+	&--history          { .cdx-mixin-css-icon( @cdx-icon-history ); }
+	&--home             { .cdx-mixin-css-icon( @cdx-icon-home ); }
+	&--image            { .cdx-mixin-css-icon( @cdx-icon-image ); }
+	&--imageGallery     { .cdx-mixin-css-icon( @cdx-icon-image-gallery ); }
+	&--infoFilled       { .cdx-mixin-css-icon( @cdx-icon-info-filled ); }
+	&--labFlask         { .cdx-mixin-css-icon( @cdx-icon-lab-flask ); }
+	&--language         { .cdx-mixin-css-icon( @cdx-icon-language ); }
+	&--link             { .cdx-mixin-css-icon( @cdx-icon-link ); }
+	&--linkExternal     { .cdx-mixin-css-icon( @cdx-icon-link-external ); }
+	&--listBullet       { .cdx-mixin-css-icon( @cdx-icon-list-bullet ); }
+	&--lock             { .cdx-mixin-css-icon( @cdx-icon-lock ); }
+	&--logIn            { .cdx-mixin-css-icon( @cdx-icon-log-in ); }
+	&--logOut           { .cdx-mixin-css-icon( @cdx-icon-log-out ); }
+	&--logoWikidata     { .cdx-mixin-css-icon( @cdx-icon-logo-wikidata ); }
+	&--message          { .cdx-mixin-css-icon( @cdx-icon-message ); }
+	&--move             { .cdx-mixin-css-icon( @cdx-icon-move ); }
+	&--printer          { .cdx-mixin-css-icon( @cdx-icon-printer ); }
+	&--qrCode           { .cdx-mixin-css-icon( @cdx-icon-qr-code ); }
+	&--quotes           { .cdx-mixin-css-icon( @cdx-icon-quotes ); }
+	&--recentChanges    { .cdx-mixin-css-icon( @cdx-icon-recent-changes ); }
+	&--reference        { .cdx-mixin-css-icon( @cdx-icon-reference ); }
+	&--reload           { .cdx-mixin-css-icon( @cdx-icon-reload ); }
+	&--sandbox          { .cdx-mixin-css-icon( @cdx-icon-sandbox ); }
+	&--search           { .cdx-mixin-css-icon( @cdx-icon-search ); }
+	&--settings         { .cdx-mixin-css-icon( @cdx-icon-settings ); }
+	&--share            { .cdx-mixin-css-icon( @cdx-icon-share ); }
+	&--specialPages     { .cdx-mixin-css-icon( @cdx-icon-special-pages ); }
+	&--speechBubbleAdd  { .cdx-mixin-css-icon( @cdx-icon-speech-bubble-add ); }
+	&--speechBubbles    { .cdx-mixin-css-icon( @cdx-icon-speech-bubbles ); }
+	&--star             { .cdx-mixin-css-icon( @cdx-icon-star ); }
+	&--tag              { .cdx-mixin-css-icon( @cdx-icon-tag ); }
+  &--trash            { .cdx-mixin-css-icon( @cdx-icon-trash ); }
+	&--tray             { .cdx-mixin-css-icon( @cdx-icon-tray ); }
+	&--unBlock          { .cdx-mixin-css-icon( @cdx-icon-un-block ); }
+	&--unLock           { .cdx-mixin-css-icon( @cdx-icon-un-lock ); }
+	&--unStar           { .cdx-mixin-css-icon( @cdx-icon-un-star ); }
+	&--upload           { .cdx-mixin-css-icon( @cdx-icon-upload ); }
+	&--userAdd          { .cdx-mixin-css-icon( @cdx-icon-user-add ); }
+	&--userAvatar       { .cdx-mixin-css-icon( @cdx-icon-user-avatar ); }
+	&--userContributions{ .cdx-mixin-css-icon( @cdx-icon-user-contributions ); }
+	&--userGroup        { .cdx-mixin-css-icon( @cdx-icon-user-group ); }
+	&--userTalk         { .cdx-mixin-css-icon( @cdx-icon-user-talk ); }
+	&--watchlist        { .cdx-mixin-css-icon( @cdx-icon-watchlist ); }
+	&--wikiText         { .cdx-mixin-css-icon( @cdx-icon-wiki-text ); }
+}
