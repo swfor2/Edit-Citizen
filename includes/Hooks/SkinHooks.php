@@ -291,7 +291,7 @@ class SkinHooks implements
 			'contributions' => 'userContributions',
 			'emailuser' => 'message',
 			// Extension:Cargo
-			'cargo-pagevalues' => 'database',
+			'cargo-pagevalues' => 'cdxIconTable',
 			// Extension:CiteThisPage
 			'citethispage' => 'quotes',
 			// Extension:CreateRedirect
